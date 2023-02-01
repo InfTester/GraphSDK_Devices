@@ -1,5 +1,3 @@
-# GraphSDK_Devices
-
 # Microsoft Graph SDK Device Test Automation Execution Script
 
 This Repository holds the PowerShell Microsoft Graph SDK Device Test Automation Execution Scripts.  The scripts have been provided to test a single device, which is initially identified, by specifying the user and then the serial number of the device.  The script utilises Microsoft PowerShell and the modules Microsoft Graph SDK and Pester. 

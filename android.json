@@ -1,0 +1,113 @@
+﻿{
+  "Android": [
+    {
+      "AadRegistered": "True",
+      "ActivationLockBypassCode": "",
+      "AndroidSecurityPatchLevel": "2022-10-01",
+      "AssignmentFilterEvaluationStatusDetails": "",
+      "AutopilotEnrolled": "False",
+      "AzureActiveDirectoryDeviceId": "315e5ae5-fc5c-4587-b587-1e1adec705e9",
+      "AzureAdDeviceId": "315e5ae5-fc5c-4587-b587-1e1adec705e9",
+      "AzureAdRegistered": "True",
+      "BootstrapTokenEscrowed": "False",
+      "ChassisType": "unknown",
+      "ChromeOSDeviceInfo": ""
+    },
+    {
+      "CloudPcRemoteActionResults": "",
+      "ComplianceGracePeriodExpirationDateTime": "",
+      "ComplianceState": "noncompliant"
+    },
+    {
+      "ConfigurationManagerClientEnabledFeatures": "Microsoft.Graph.PowerShell.Models.MicrosoftGraph.ConfigurationManagerClientEnabledFeatures1",
+      "ConfigurationManagerClientEnabledFeatures.CompliancePolicy": "",
+      "ConfigurationManagerClientEnabledFeatures.DeviceConfiguration":"",
+      "ConfigurationManagerClientEnabledFeatures.EndpointProtection:"",
+      "ConfigurationManagerClientEnabledFeatures.Inventory:"",
+      "ConfigurationManagerClientEnabledFeatures.ModernApps:"",
+      "ConfigurationManagerClientEnabledFeatures.OfficeApps:"",
+      "ConfigurationManagerClientEnabledFeatures.ResourceAccess:"",
+      "ConfigurationManagerClientEnabledFeatures.WindowsUpdateForBusiness:"",
+      "ConfigurationManagerClientEnabledFeatures.AdditionalProperties:" {
+      }
+    },
+    {
+
+      "ConfigurationManagerClientHealthState:" Microsoft.Graph.PowerShell.Models.MicrosoftGraph"ConfigurationManagerClientHealthState
+      "ConfigurationManagerClientHealthState |
+      "ConfigurationManagerClientHealthState.ErrorCode
+      "ConfigurationManagerClientHealthState.LastSyncDateTime "ConfigurationManagerClientHealthState.State
+      "ConfigurationManagerClientHealthState.AdditionalProperties
+    },
+    {
+      "ConfigurationManagerClientInformation:" Microsoft.Graph.PowerShell.Models.MicrosoftGraph"ConfigurationManagerClientInformation
+      "ConfigurationManagerClientInformation |
+      Fl
+      ClientIdentifier:"
+      ClientVersion:"
+      IsBlocked:"
+      AdditionalProperties:" {
+      }
+    },
+    {
+      DetectedApps:"
+      DeviceActionResults:" {
+      }
+    },
+    {
+      DeviceCategory:" Microsoft.Graph.PowerShell.Models.MicrosoftGraphDeviceCategory1
+      DeviceCategory |
+      fl
+      Description:"
+      DisplayName:"
+      Id:"
+      RoleScopeTagIds:"
+      AdditionalProperties:" {
+      }
+
+    },
+    {
+      DeviceCategoryDisplayName:" Unknown
+      DeviceCompliancePolicyStates:"
+      DeviceConfigurationStates:"
+      DeviceEnrollmentType:" androidEnterpriseFullyManaged
+      DeviceFirmwareConfigurationInterfaceManaged:" False
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+
+  ]
+} DeviceHealthAttestationState :" Microsoft.Graph.PowerShell.Models.MicrosoftGraphDeviceHealthAttestationState DeviceHealthAttestationState | fl AttestationIdentityKey :" BitLockerStatus :" BootAppSecurityVersion :" BootDebugging :" BootManagerSecurityVersion :" BootManagerVersion :" BootRevisionListInfo :" CodeIntegrity :" CodeIntegrityCheckVersion :" CodeIntegrityPolicy :" ContentNamespaceUrl :" ContentVersion :" DataExcutionPolicy :" DeviceHealthAttestationStatus :" EarlyLaunchAntiMalwareDriverProtection :" HealthAttestationSupportedStatus :" HealthStatusMismatchInfo :" IssuedDateTime :" LastUpdateDateTime :" OperatingSystemKernelDebugging :" OperatingSystemRevListInfo :" Pcr0 :" PcrHashAlgorithm :" ResetCount :" RestartCount :" SafeMode :" SecureBoot :" SecureBootConfigurationPolicyFingerPrint :" TestSigning :" TpmVersion :" VirtualSecureMode :" WindowsPe :" AdditionalProperties :" {
+} DeviceName :" tony.law_AndroidEnterprise_11/9/2022_10:"31 AM DeviceRegistrationState :" registered DeviceType :" androidEnterprise EasActivated :" False EasActivationDateTime :" 01/01/0001 00:"00:"00 EasDeviceId :" EmailAddress :" tony.law@defram365e5preproduction.onmicrosoft.com EnrolledDateTime :" 09/11/2022 10:"31:"37 EnrollmentProfileName :" EthernetMacAddress :" ExchangeAccessState :" none ExchangeAccessStateReason :" none ExchangeLastSuccessfulSyncDateTime :" 01/01/0001 00:"00:"00 FreeStorageSpaceInBytes :" 0 HardwareInformation :" Microsoft.Graph.PowerShell.Models.MicrosoftGraphHardwareInformation BatteryChargeCycles :" 0 BatteryHealthPercentage :" 0 BatteryLevelPercentage :" BatterySerialNumber :" CellularTechnology :" DeviceFullQualifiedDomainName :" DeviceGuardLocalSystemAuthorityCredentialGuardState :" running DeviceGuardVirtualizationBasedSecurityHardwareRequirementState :" meetHardwareRequirements DeviceGuardVirtualizationBasedSecurityState :" running DeviceLicensingLastErrorCode :" 0 DeviceLicensingLastErrorDescription :" DeviceLicensingStatus :" unknown EsimIdentifier :" FreeStorageSpace :" 0 IPAddressV4 :" Imei :" 355472981723911 IsEncrypted :" False IsSharedDevice :" False IsSupervised :" False Manufacturer :" Meid :" Model :" OSBuildNumber :" OperatingSystemEdition :" OperatingSystemLanguage :" OperatingSystemProductType :" 0 PhoneNumber :" ProductName :" ResidentUsersCount :" SerialNumber :" RF8T311T20E SharedDeviceCachedUsers :" {
+} SubnetAddress :" SubscriberCarrier :" SystemManagementBiosVersion :" TotalStorageSpace :" 0 TpmManufacturer :" TpmSpecificationVersion :" TpmVersion :" WifiMac :" WiredIPv4Addresses :" {
+} AdditionalProperties :" {
+} IsEncrypted :" True IsSupervised :" False JailBroken :" Unknown JoinType :" azureADRegistered LastSyncDateTime :" 30/12/2022 10:"20:"43 LostModeState :" disabled ManagedDeviceName :" tony.law_AndroidEnterprise_11/9/2022_10:"31 AM ManagedDeviceOwnerType :" company ManagementAgent :" googleCloudDevicePolicyController ManagementCertificateExpirationDate :" 01/01/0001 00:"00:"00 ManagementFeatures :" none ManagementState :" managed Manufacturer :" samsung Meid :" 35547298172391 Model :" SM-G780G OSVersion :" 12 OperatingSystem :" Android OwnerType :" company PartnerReportedThreatState :" unknown PreferMdmOverGroupPolicyAppliedDateTime :" 01/01/0001 00:"00:"00 RemoteAssistanceSessionErrorDetails :" RemoteAssistanceSessionUrl :" RequireUserEnrollmentApproval :" RetireAfterDateTime :" 01/01/0001 00:"00:"00 RoleScopeTagIds :" {
+} SecurityBaselineStates :" SerialNumber :" RF8T311T20E TotalStorageSpaceInBytes :" 5794430976 UserDisplayName :" Tony Law UserId :" b164354e-d440-46d9-8546-4e11169cbe12 UserPrincipalName :" tony.law@defram365e5preproduction.onmicrosoft.com WiFiMacAddress :" 44EA30E54EE7 WindowsActiveMalwareCount :" 0 WindowsProtectionState :" Microsoft.Graph.PowerShell.Models.MicrosoftGraphWindowsProtectionState WindowsProtectionStateAntiMalwareVersion WindowsProtectionStateDetectedMalwareState WindowsProtectionStateDeviceState WindowsProtectionStateEngineVersion WindowsProtectionStateFullScanOverdue WindowsProtectionStateFullScanRequired WindowsProtectionStateId WindowsProtectionStatesVirtualMachine WindowsProtectionStateLastFullScanDateTime WindowsProtectionStateLastFullScanSignatureVersion WindowsProtectionStateLastQuickScanDateTime WindowsProtectionStateLastQuickScanSignatureVersion WindowsProtectionStateLastReportedDateTime WindowsProtectionStateMalwareProtectionEnabled WindowsProtectionStateNetworkInspectionSystemEnabled WindowsProtectionStateProductStatus WindowsProtectionStateQuickScanOverdue WindowsProtectionStateRealTimeProtectionEnabled WindowsProtectionStateRebootRequired WindowsProtectionStateSignatureUpdateOverdue WindowsProtectionStateSignatureVersion WindowsProtectionStateTamperProtectionEnabled WindowsProtectionStateAdditionalProperties WindowsRemediatedMalwareCount :" 0 AdditionalProperties :" {
+} #>
