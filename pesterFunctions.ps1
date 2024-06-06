@@ -40,7 +40,7 @@ Pause
 }
 
 function User-Agreement {
-#
+<#
 Creator - Tony Law
 Date - 06/06/2024
 Version 0.1
@@ -56,4 +56,52 @@ Start-Sleep -Seconds 2.5
 Pause
 }
 
+}
+
+function mgAccess-MgSDK {
+<#
+Creator - Tony Law
+Date - 06/06/2024
+Version 0.1
+#>
+        Write-Host "`n`n$env:USERNAME, You are now connecting to the Azure Tenant using Microsoft`n" 
+        Start-Sleep -Seconds 1
+        Connect-MgGraph
+        $tenantID = (Get-MgOrganization).DisplayName
+        Write-Host "You are now connected to $tenantID tenant"
+        $mgProf = Get-MgProfile
+        if (-not($mgProf.Name -eq "beta"))
+        {
+        Select-MgProfile -Name Beta
+        Write-Host "`nInstalling Microsoft Graph Profile 'Beta', this may take a while"
+        }
+        Start-Sleep -Seconds 1
+}
+
+
+function mgWindows-UserDevice {
+<#
+Creator - Tony Law
+Date - 06/06/2024
+Version 0.1
+#>
+$devDetails = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "Windows"}
+Write-Host "`nCollecting users...."
+$userDispName = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "Windows"} | Select-Object UserDisplayName -Unique 
+$userDispName | ft
+
+do {
+    $user = Read-Host -Prompt "Copy and paste the 'UserDisplayName' from above and then press enter to continue"
+} While ($user -notin ($devDetails).UserDisplayName) 
+
+Start-Sleep -Seconds 1
+Write-Host "`nCollecting device details...."
+Start-Sleep -Seconds 1
+$devDetails | Where-Object UserDisplayName -EQ "$user" | Select-Object UserDisplayName, SerialNumber, deviceName, Model, OperatingSystem, OsVersion | ft
+Start-Sleep -Seconds 1
+
+do {
+    $deviceID = Read-Host -Prompt "Copy and paste the 'Serial Number' from above and then press enter to execute SIT"
+} While ($deviceID -notin ($devDetails).SerialNumber)
+$windowsOSDevice = Get-MgDeviceManagementManagedDevice | Where-Object {$_.SerialNumber -eq $deviceID}
 }
