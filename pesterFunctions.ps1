@@ -105,3 +105,113 @@ do {
 } While ($deviceID -notin ($devDetails).SerialNumber)
 $windowsOSDevice = Get-MgDeviceManagementManagedDevice | Where-Object {$_.SerialNumber -eq $deviceID}
 }
+
+function mgAndroid-UserDevice {
+<#
+Creator - Tony Law
+Date - 06/06/2024
+Version 0.1
+#>
+        
+        $devDetails = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "android"}
+        Write-Host "`nCollecting Users...."
+        $userDispName = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "android"} | Select-Object UserDisplayName -Unique 
+        $userDispName | ft
+
+        do {
+        $user = Read-Host -Prompt "Copy and paste the 'UserDisplayName' from above and then press enter to continue"
+        } While ($user -notin ($devdetails).UserDisplayName) 
+
+        Start-Sleep -Seconds 1
+        Write-Host "`nCollecting device details...."
+        Start-Sleep -Seconds 1
+        $devDetails | Where-Object UserDisplayName -EQ "$user" | Select-Object UserDisplayName, SerialNumber, deviceName, Model, OsVersion | ft
+        Start-Sleep -Seconds 1
+
+        do {
+        $deviceID = Read-Host -Prompt "Copy and paste the 'Serial Number' from above and then press enter to execute SIT"
+        } While ($deviceID -notin ($devDetails).SerialNumber)
+        $androidDevice = Get-MgDeviceManagementManagedDevice | Where-Object {$_.SerialNumber -eq $deviceID}
+}
+
+
+function mgIoS-UserDevice {
+<#
+Creator - Tony Law
+Date - 06/06/2024
+Version 0.1
+#>
+$devDetails = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "ios"}
+Write-Host "`nCollecting users...."
+$userDispName = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "ios"} | Select-Object UserDisplayName -Unique 
+$userDispName | ft
+
+do {
+    $user = Read-Host -Prompt "Copy and paste the 'UserDisplayName' from above and then press enter to continue"
+} While ($user -notin ($devdetails).UserDisplayName) 
+
+Start-Sleep -Seconds 1
+Write-Host "`nCollecting device details...."
+Start-Sleep -Seconds 1
+$devDetails | Where-Object UserDisplayName -EQ "$user" | Select-Object UserDisplayName, SerialNumber, deviceName, Model, OsVersion | ft
+Start-Sleep -Seconds 1
+
+do {
+    $deviceID = Read-Host -Prompt "Copy and paste the 'Serial Number' from above and then press enter to execute SIT"
+} While ($deviceID -notin ($devDetails).SerialNumber)
+$androidDevice = Get-MgDeviceManagementManagedDevice | Where-Object {$_.SerialNumber -eq $deviceID}
+}
+
+function mgMacOS-UserDevice {
+<#
+Creator - Tony Law
+Date - 06/06/2024
+Version 0.1
+#>
+$devDetails = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "macOS"}
+Write-Host "`nCollecting users...."
+$userDispName = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "macOS"} | Select-Object UserDisplayName -Unique 
+$userDispName | ft
+
+do {
+    $user = Read-Host -Prompt "Copy and paste the 'UserDisplayName' from above and then press enter to continue"
+} While ($user -notin ($devdetails).UserDisplayName) 
+
+Start-Sleep -Seconds 1
+Write-Host "`nCollecting device details...."
+Start-Sleep -Seconds 1
+$devDetails | Where-Object UserDisplayName -EQ "$user" | Select-Object UserDisplayName, SerialNumber, deviceName, Model, OsVersion | ft
+Start-Sleep -Seconds 1
+
+do {
+    $deviceID = Read-Host -Prompt "Copy and paste the 'Serial Number' from above and then press enter to execute SIT"
+} While ($deviceID -notin ($devDetails).SerialNumber)
+$androidDevice = Get-MgDeviceManagementManagedDevice | Where-Object {$_.SerialNumber -eq $deviceID}
+}
+
+function mgLinux-UserDevice {
+<#
+Creator - Tony Law
+Date - 06/06/2024
+Version 0.1
+#>
+$devDetails = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "linux"}
+Write-Host "`nCollecting users...."
+$userDispName = Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -eq "linux"} | Select-Object UserDisplayName -Unique 
+$userDispName | ft
+
+do {
+    $user = Read-Host -Prompt "Copy and paste the 'UserDisplayName' from above and then press enter to continue"
+} While ($user -notin ($devdetails).UserDisplayName) 
+
+Start-Sleep -Seconds 1
+Write-Host "`nCollecting device details...."
+Start-Sleep -Seconds 1
+$devDetails | Where-Object UserDisplayName -EQ "$user" | Select-Object UserDisplayName, SerialNumber, deviceName, Model, OsVersion | ft
+Start-Sleep -Seconds 1
+
+do {
+    $deviceID = Read-Host -Prompt "Copy and paste the 'Serial Number' from above and then press enter to execute SIT"
+} While ($deviceID -notin ($devDetails).SerialNumber)
+$androidDevice = Get-MgDeviceManagementManagedDevice | Where-Object {$_.SerialNumber -eq $deviceID}
+}
