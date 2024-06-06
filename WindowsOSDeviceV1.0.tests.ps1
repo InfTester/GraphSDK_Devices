@@ -90,7 +90,7 @@ Get-MgDeviceManagementManagedDevice | Where-Object {$_.OperatingSystem -EQ "Wind
 function mgUser-Agreement {
 #Creator - Tony Law
 Clear-Host
-Write-Host "`n============= THIS PESTER AUTOMATION SCRIPT IS PROVIDED BY THE DXC TEST TEAM =============="
+Write-Host "`n============= THIS PESTER AUTOMATION SCRIPT IS PROVIDED BY THE TEST TEAM =============="
 Write-Host "`nHello $env:USERNAME, you are now executing a Pester Test Script, which will connect to an Azure Tenant."
 Start-Sleep -seconds 3
 Write-Host "`nBy continuing, you agree that you have the appropriate permissions, and have been authorised to do so."
